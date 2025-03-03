@@ -1,3 +1,6 @@
 [submodule "focus"]
 	path = focus
 	url = https://github.com/nojasm/justfocus
+[submodule "orborbgame"]
+	path = orborbgame
+	url = https://github.com/nojasm/orborbgame.git
