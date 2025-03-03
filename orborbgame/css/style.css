@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url("../res/wallpaper.png");
+    background-size: cover;
+    background-attachment: fixed;
+
+    font-family: Atma;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    padding-top: 75px;
+
+    overflow-y: auto;
+}
+
+button {
+    border: none;
+}
+
+button:hover {
+    border: none;
+    transform: scale(98%);
+    cursor: pointer;
+}
+
+#front-card {
+    display: flex;
+    flex-direction: column;
+
+    width: 600px;
+    background-color: hsl(157, 60%, 90%);
+    box-shadow: 0 0 25px #2225;
+    border: 3px solid #7c7c7c;
+    border-radius: 50px;
+}
+
+#front-card__play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+    margin: 25px;
+
+    width: calc(100% - 50px);
+    border-radius: 10px;
+    background-color: rgb(19, 163, 62);
+    box-sizing: border-box;
+}
+
+#front-card__play > img {
+    height: 50px;
+    filter: invert(1);
+}
+
+#fail {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    z-index: 1500;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+
+    color: white;
+    background-color: #112d;
+    
+    opacity: 0;
+
+    transition: opacity 500ms ease-in-out;
+}
+
+#fail__title {
+    font-family: Arial Black;
+    font-size: 150px;
+    line-height: 150px;
+}
+
+#fail__comment {
+    font-family: Comic Sans MS;
+    font-size: 30px;
+    color: #ccc;
+
+    margin-bottom: 50px;
+}
+
+#fail__score {
+    font-family: monospace;
+    letter-spacing: 10px;
+    color: black;
+    background-color: gold;
+    font-size: 50px;
+    padding: 25px;
+    border-radius: 50px;
+}
+
+#curtains {
+    position: fixed;
+    z-index: 9999;
+    width: 100vw;
+    height: 100vh;
+    top: -100%;
+    left: 0;
+
+    /*background-color: beige;*/
+    background-image: url("../res/curtains.png");
+    background-size: cover;
+    
+    transition: top 1s ease-in-out;
+}
