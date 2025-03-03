@@ -17,9 +17,14 @@ body {
     
     justify-content: center;
     align-items: center;
-    padding-top: 75px;
+    padding-top: 25px;
 
     overflow-y: auto;
+}
+
+#coffee {
+    margin: 10px;
+    transform: scale(0.7);
 }
 
 button {
